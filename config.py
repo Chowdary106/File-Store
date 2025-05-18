@@ -22,7 +22,7 @@ API_ID = int(environ.get("API_ID", "27604683"))
 API_HASH = environ.get("API_HASH", "ed52a1d0803b2ed84c5cca7f20535aac")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
-PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
+PICS = (environ.get('PICS', None)).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "local_moviesbot") # without @
 PORT = environ.get("PORT", "8080")
